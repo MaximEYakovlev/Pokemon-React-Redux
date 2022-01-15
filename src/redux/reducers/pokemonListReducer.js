@@ -8,6 +8,7 @@ const defaultState = {
   loading: false,
   data: [],
   errorMsg: "",
+  count: 0,
 };
 
 export const pokemonListReducer = (state = defaultState, action) => {
@@ -22,8 +23,9 @@ export const pokemonListReducer = (state = defaultState, action) => {
       return {
         ...state,
         loading: false,
-        data: action.payload,
+        data: action.payload.results,
         errorMsg: "",
+        count: action.payload.count,
       };
     case POKEMON_LIST_FAIL:
       return {
