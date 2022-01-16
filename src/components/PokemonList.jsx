@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import _ from "lodash";
-import { GetPokemonList } from "../redux/actions/pokemonActions";
+import { getPokemonList } from "../redux/actions/pokemonActions";
 import { Link } from "react-router-dom";
 
 export const PokemonList = () => {
@@ -13,7 +13,7 @@ export const PokemonList = () => {
   }, []);
 
   const fetchData = (page = 1) => {
-    dispatch(GetPokemonList(page));
+    dispatch(getPokemonList(page));
   };
 
   const showData = () => {

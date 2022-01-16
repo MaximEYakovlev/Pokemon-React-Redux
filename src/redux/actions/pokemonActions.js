@@ -8,7 +8,7 @@ import {
   POKEMON_MULTIPLE_FAIL,
 } from "../types";
 
-export const GetPokemonList = (page) => async (dispatch) => {
+export const getPokemonList = (page) => async (dispatch) => {
   try {
     dispatch({
       type: POKEMON_LIST_LOADING,
