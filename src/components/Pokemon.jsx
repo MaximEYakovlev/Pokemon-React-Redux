@@ -21,10 +21,10 @@ export const Pokemon = (props) => {
         <div className="pokemon-wrapper">
           <div className="item">
             <h1>Sprites</h1>
-            <img src={pokeData.sprites.front_default} />
-            <img src={pokeData.sprites.back_default} />
-            <img src={pokeData.sprites.front_shiny} />
-            <img src={pokeData.sprites.back_shiny} />
+            <img src={pokeData.sprites.front_default} alt="img" />
+            <img src={pokeData.sprites.back_default} alt="img" />
+            <img src={pokeData.sprites.front_shiny} alt="img" />
+            <img src={pokeData.sprites.back_shiny} alt="img" />
           </div>
           <div className="item">
             <h1>Stats</h1>
